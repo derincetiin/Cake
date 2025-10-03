@@ -8,3 +8,14 @@ function openPopup(title, desc, img) {
   function closePopup() {
     document.getElementById("popup").style.display = "none";
   }
+
+  const buttons = document.querySelectorAll("button[data-target]");
+
+// Her buton için tıklama eventi ekliyoruz
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    const targetId = button.getAttribute("data-target");
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  });
+});

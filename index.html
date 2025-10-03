@@ -9,12 +9,13 @@
 
   <!-- Kategori Menüsü -->
   <div class="menu-bar">
-    <button>Cheesecake</button>
-    <button>Cookie</button>
-    <button>Nata</button>
+    <button data-target="cheesecake">Cheesecake</button>
+    <button data-target="cookie">Cookie</button>
+    <button data-target="nata">Nata</button>
   </div>
 
-  <!-- Ürün Listesi -->
+  <h1 id="cheesecake">Cheesecake</h1>
+
   <div class="cheesecake-list">
     <div class="product-card" onclick="openPopup('Limonlu Cheesecake','Klasik Limonlu Cheesecake','limonlu.webp')">
       <img src="images/limonlu.webp" alt="Limonlu">
@@ -29,17 +30,35 @@
     </div>
   </div>
 
+  <h1 id="cookie">Cookie</h1>
+
    <div class="cookie-list">
-    <div class="product-card" onclick="openPopup('Limonlu Cheesecake','Klasik Limonlu Cheesecake','limonlu.webp')">
-      <img src="images/limonlu.webp" alt="Limonlu">
+    <div class="product-card" onclick="openPopup('Cookie','Damla Çikolatalı Cookie','cookie.webp')">
+      <img src="images/cookie.webp" alt="Cookie">
       <h3>Cookie</h3>
       <p>400 TL</p>
     </div>
 
-    <div class="product-card" onclick="openPopup('Böğürtlenli Cheesecake','Böğürtlenli Cheesecake','bogurtlenli.jpeg')">
-      <img src="images/bogurtlenli.jpeg" alt="Geniş Kahvaltı">
-      <h3>Damla Çikolatalı Cookie</h3>
+    <div class="product-card" onclick="openPopup('Çikolatalı Cookie','Bildiğin çikolatalı cookie','çikolatalıcookie.jpeg')">
+      <img src="images/çikolatalıcookie.jpg" alt="Çikolatalı">
+      <h3>Çikolatalı Cookie</h3>
       <p>400 TL</p>
+    </div>
+  </div>
+
+    <h1 id="nata">Nata</h1>
+  
+   <div class="nata-list">
+    <div class="product-card" onclick="openPopup('Klasik Nata','Klasik Nata','nata.jpg')">
+      <img src="images/nata.jpg" alt="Nata">
+      <h3>Klasik Nata</h3>
+      <p>300 TL</p>
+    </div>
+
+    <div class="product-card" onclick="openPopup('Fındıklı Nata','Fındıklı Nata','findiklinata.jpeg')">
+      <img src="images/findiklinata.webp" alt="Fındıklı Nata">
+      <h3>Fındıklı Nata</h3>
+      <p>300 TL</p>
     </div>
   </div>
 
