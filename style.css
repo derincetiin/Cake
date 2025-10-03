@@ -4,6 +4,7 @@ h1{
 
 body {
   font-family: Arial, sans-serif;
+  padding-top: 5vh;
   margin: 0;
   background: #f5f2ef;
 }
@@ -11,11 +12,18 @@ body {
 /* Üst Menü */
 .menu-bar {
   display: flex;
-  justify-content: center; /* kısa menüde ortalar */
+  justify-content: center;
+  align-items: center;
   overflow-x: auto;
   white-space: nowrap;
   background: #d2a679;
-  padding: 10px;
+  height: 5vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  /* ekranın tamamına yayılır */
+  z-index: 100;
 }
 .menu-bar button {
   background: white;
@@ -25,6 +33,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  text-align: center;
 }
 .menu-bar button:hover {
   background: #f1f1f1;
@@ -99,6 +108,21 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 15px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;   /* ekrandan 20px yukarıda */
+  right: 20px;    /* ekrandan 20px içeride */
+  width: 60px;    /* logo boyutu */
+  height: 60px;
+  z-index: 1000;  /* diğer içeriklerin üstünde */
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* 📱 Telefon ekranında 1 ürün */
